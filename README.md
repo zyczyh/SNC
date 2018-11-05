@@ -15,12 +15,12 @@ The instance running on the client will read from STDIN and send AES-GCM protect
 
 The following is a sample execution:
 
-[client]$ ./snc --key CSC574ISAWESOME server.add.ress 9999 < some-file.txt [server]$ ./snc --key CSC574ISAWESOME -l 9999 > some-file.txt
+[client]$ ./snc --key THISISAWESOME server.add.ress 9999 < some-file.txt [server]$ ./snc --key THISISAWESOME -l 9999 > some-file.txt
 
 To be equivalent to the nc command, information entered in STDIN on the server should make its way to STDOUT on the client. To do this, we use multiple threads.
 
 An sample execution with bi-directional flow is as follows:
 
-[client]$ ./snc --key CSC574ISAWESOME server.add.ress 9999 < file1-in.txt > file2-out.txt [server]$ ./snc --key CSC574ISAWESOME -l 9999 > file1-out.txt < file2-in.txt
+[client]$ ./snc --key THISISAWESOME server.add.ress 9999 < file1-in.txt > file2-out.txt [server]$ ./snc --key THISISAWESOME -l 9999 > file1-out.txt < file2-in.txt
 
 
